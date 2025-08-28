@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 class HomeView(TemplateView):
-    template_name = 'shared/_layout.html'
+    template_name = 'home_module/index.html'
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)

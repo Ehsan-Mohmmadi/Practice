@@ -19,6 +19,8 @@ from _pyrepl.commands import home
 from django.contrib import admin
 from django.urls import path, include
 
+from home_module import urls
+
 urlpatterns = [
     path('', include('home_module.urls')),
     path('admin/', admin.site.urls),

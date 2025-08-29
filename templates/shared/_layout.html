@@ -1,5 +1,6 @@
 {% load render_partial %}
-
+{% load static %}
+{% render_partial%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,8 @@
 
 <body>
 
-{% render_partial 'home_module.views.header_component' %}
+{% render_partial '' %}
+
 
 <section id="slider"><!--slider-->
     <div class="container">

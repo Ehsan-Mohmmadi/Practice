@@ -1,6 +1,7 @@
 from tkinter.constants import CASCADE
 
 from django.db import models
+from django.utils.text import slugify
 
 
 class Category(models.Model):
@@ -27,3 +28,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super().save(*args, **kwargs)

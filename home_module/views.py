@@ -1,16 +1,4 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
 
-
-# Create your views here.
-
-class HomeView(TemplateView):
-    template_name = 'home_module/index.html'
-
-    def get_context_data(self, **kwargs):
-        context = super(HomeView, self).get_context_data(**kwargs)
-        return context
-
-
-def header_component(request):
-    return render(request, 'shared/header_component.html')
+def home(request):
+    render(request,'shared/_layout.html')

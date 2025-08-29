@@ -25,7 +25,7 @@
 <body>
 
 {% render_partial 'home_module.views.header_component' %}
-{% render_partial 'home_module.views.content_component' %}
+{% block content %}{% endblock %}
 {% render_partial 'home_module.views.footer_component' %}
 
 <script src="/static/js/jquery.js"></script>

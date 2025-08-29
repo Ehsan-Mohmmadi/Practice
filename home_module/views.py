@@ -11,4 +11,4 @@ def footer_component(request):
     return render(request, 'shared/footer_component.html')
 
 def home(request):
-    return render(request,'shared/_layout.html')
+    return render(request,'home_module/index.html')

@@ -1,2 +1,4 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+
+def product_list(request):
+    return render(request, 'product_module/product_list.html')
